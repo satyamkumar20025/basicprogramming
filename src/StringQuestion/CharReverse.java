@@ -2,7 +2,7 @@ package StringQuestion;
 
 import java.util.Scanner;
 
-public class Reverse {
+public class CharReverse {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

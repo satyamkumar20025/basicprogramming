@@ -1,4 +1,4 @@
-package OPERATOR_QUESTIONS;
+package Operator_Question;
 
 public class Left_Right_Shift {
 	public static void main(String[] args)

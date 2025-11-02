@@ -1,4 +1,4 @@
-package OPERATOR_QUESTIONS;
+package Operator_Question;
 
 public class max_ternary_operator {
 	public static void main(String[] args)

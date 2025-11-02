@@ -2,7 +2,7 @@ package StringQuestion;
 
 import java.util.Scanner;
 
-public class ReverseWithoutMethods {
+public class CharReverseWithoutMethods {
 
 	    public static void main(String[] args) {
 	        Scanner scanner = new Scanner(System.in);

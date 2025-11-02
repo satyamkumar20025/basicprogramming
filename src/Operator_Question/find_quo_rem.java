@@ -1,4 +1,4 @@
-package OPERATOR_QUESTIONS;
+package Operator_Question;
   import java.util.Scanner;
 public class find_quo_rem {
      public static void main(String[]args)

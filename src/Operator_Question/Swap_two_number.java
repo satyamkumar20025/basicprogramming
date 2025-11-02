@@ -1,4 +1,4 @@
-package OPERATOR_QUESTIONS;
+package Operator_Question;
 
 public class Swap_two_number {
 
