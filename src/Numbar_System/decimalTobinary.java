@@ -1,8 +1,8 @@
-package While_Dwhile_Question;
+package Numbar_System;
 
 import java.util.Scanner;
 
-public class question4 {
+class decimalTobinary{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
          System.out. print("Enter the any number");
@@ -22,3 +22,4 @@ public class question4 {
 	};
 
 }
+
