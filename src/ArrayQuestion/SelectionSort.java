@@ -1,41 +1,46 @@
 package ArrayQuestion;
 
+public class SelectionSort {
 
-	import java.util.Scanner;
-
-	public class SelectionSort {
-	    public static void main(String[] args) {
-	        Scanner sc = new Scanner(System.in);
-
-	        System.out.print("Enter number of elements: ");
-	        int n = sc.nextInt();
-	        int[] arr = new int[n];
-
-	        System.out.println("Enter " + n + " integers:");
-	        for (int i = 0; i < n; i++) {
-	            arr[i] = sc.nextInt();
-	        }
-
-	        // Selection Sort logic
-	        for (int i = 0; i < n - 1; i++) {
+	    // Method for Selection Sort
+	    void selectionSort(int[] arr) {
+	        for (int i = 0; i < arr.length - 1; i++) {
 	            int minIndex = i;
-	            for (int j = i + 1; j < n; j++) {
+
+	            for (int j = i + 1; j < arr.length; j++) {
 	                if (arr[j] < arr[minIndex]) {
 	                    minIndex = j;
 	                }
 	            }
-	            // Swap
-	            int temp = arr[i];
-	            arr[i] = arr[minIndex];
-	            arr[minIndex] = temp;
-	        }
 
-	        System.out.println("Sorted array using Selection Sort:");
+	            // Swap smallest with first unsorted element
+	            int temp = arr[minIndex];
+	            arr[minIndex] = arr[i];
+	            arr[i] = temp;
+	        }
+	    }
+
+	    // Method to print array
+	    void printArray(int[] arr) {
 	        for (int num : arr) {
 	            System.out.print(num + " ");
 	        }
-
-	        sc.close();
+	        System.out.println();
 	    }
-	}
 
+	    // Main method (non-static call)
+	    public static void main(String[] args) {
+	        SelectionSort s = new SelectionSort(); // object banaya
+
+	        int[] arr = {64, 25, 12, 22, 11};
+
+	        System.out.println("Before sorting:");
+	        s.printArray(arr);
+
+	        s.selectionSort(arr); // object ke through call
+
+	        System.out.println("After sorting:");
+	        s.printArray(arr);
+	    }
+	
+}
