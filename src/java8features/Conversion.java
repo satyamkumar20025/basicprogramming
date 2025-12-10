@@ -21,7 +21,7 @@ public class Conversion {
 		// One 1
 		// two 2
 		// three 3
-//			numbers.forEach((n)->digit.add(digit.get(digit.indexOf(++j))+" "+numbers.get(numbers.indexOf(n))));
+//	numbers.forEach((n)->digit.add(digit.get(digit.indexOf(++j))+" "+numbers.get(numbers.indexOf(n))));
 //			result.forEach(n->System.out.println(n));
 
 		for (int i = 0; i < numbers.size(); i++) {
